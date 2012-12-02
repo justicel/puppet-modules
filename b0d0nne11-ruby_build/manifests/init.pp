@@ -4,6 +4,8 @@
 #
 # === Parameters
 #
+# === Variables
+#
 # $rbenv::params::repo_path
 #   The repository to clone from
 #   Defaults to 'git://github.com/sstephenson/ruby-build.git'
@@ -16,8 +18,6 @@
 # $rbenv::params::install_dir
 #   The full path to the newly created directory
 #   Defaults to $install_prefix/$repo_name
-#
-# === Variables
 #
 # === Examples
 #

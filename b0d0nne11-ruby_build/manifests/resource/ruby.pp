@@ -4,11 +4,11 @@
 #
 # === Parameters
 #
-# === Variables
-#
 # $ruby_name
 #   The name of the version of ruby to install as defined by `rbenv install
 #   --list`. Defaults to $title.
+#
+# === Variables
 #
 # === Examples
 #

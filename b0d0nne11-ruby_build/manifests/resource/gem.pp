@@ -4,14 +4,14 @@
 #
 # === Parameters
 #
-# === Variables
-#
 # $gem_name
 #   The name of the gem to install. Defaults to $title.
 # $gem_version
 #   The version of the gem to install. Defaults to not specified.
 # $ruby_version
 #   The ruby version used to install the gem.
+#
+# === Variables
 #
 # === Examples
 #
