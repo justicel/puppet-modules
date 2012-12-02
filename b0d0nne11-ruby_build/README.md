@@ -26,6 +26,7 @@ To install a gem
 ## Dependencies
 
 - [puppetlabs/git](https://github.com/puppetlabs/puppetlabs-git/)
+- [b0d0nne11/build\_essential](https://github.com/b0d0nne11/puppet-modules/tree/master/b0d0nne11-build_essential)
 - [b0d0nne11/rbenv](https://github.com/b0d0nne11/puppet-modules/tree/master/b0d0nne11-rbenv)
 
 
