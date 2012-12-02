@@ -10,7 +10,7 @@ To install ruby-build
 
     class { 'ruby_build': }
 
-## Resource
+## Resources
 
 To install a ruby version
 
@@ -22,6 +22,12 @@ To install a gem
       gem_version => '1.2.3',
       ruby_name   => '1.9.3-p327'
     }
+
+## Dependencies
+
+- [puppetlabs/git](https://github.com/puppetlabs/puppetlabs-git/)
+- [b0d0nne11/rbenv](https://github.com/b0d0nne11/puppet-modules/tree/master/b0d0nne11-rbenv)
+
 
 ## License
 

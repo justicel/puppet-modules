@@ -11,6 +11,10 @@ To install rbenv
 
     class { 'rbenv': }
 
+## Dependencies
+
+- [puppetlabs/git](https://github.com/puppetlabs/puppetlabs-git/)
+
 ## License
 
 Copyright (C) 2012 Brendan O'Donnell
