@@ -1,0 +1,24 @@
+{
+  "name": "b0d0nne11-sqlite",
+  "version": "0.0.1",
+  "source": "UNKNOWN",
+  "author": "b0d0nne11",
+  "license": "Apache License, Version 2.0",
+  "summary": "Manage SQLite",
+  "description": "UNKNOWN",
+  "project_page": "https://github.com/b0d0nne11/puppet-modules/tree/master/b0d0nne11-sqlite",
+  "dependencies": [
+
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "Modulefile": "cf18d8cca175ce521f66c2f7552508b0",
+    "README.md": "3656022944b0d218d6e493708247bd51",
+    "manifests/dev.pp": "efd7ad87ba71b94da46f5aa1ea204f8d",
+    "manifests/init.pp": "b1c8c0d990ecdcb6e6662baccee336d8",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "tests/init.pp": "44e816d0677833dac5d9c79df270a196"
+  }
+}
