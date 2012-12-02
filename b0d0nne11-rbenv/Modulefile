@@ -6,4 +6,4 @@ summary       'Install rbenv'
 project_page  'https://github.com/b0d0nne11/puppet-modules/tree/master/b0d0nne11-rbenv'
 
 ## module dependencies:
-dependency 'puppetlabs/git, '>= 0.0.2'
+dependency 'puppetlabs/git', '>= 0.0.2'
