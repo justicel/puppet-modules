@@ -1,0 +1,6 @@
+name          'b0d0nne11-sqlite'
+version       '0.0.1'
+author        'b0d0nne11'
+license       'Apache License, Version 2.0'
+summary       'Manage SQLite'
+project_page  'https://github.com/b0d0nne11/puppet-modules/b0d0nne11-sqlite'
