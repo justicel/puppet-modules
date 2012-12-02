@@ -1,6 +1,11 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    facter (1.6.14)
+    hiera (1.0.0)
+    puppet (3.0.1)
+      facter (~> 1.6.11)
+      hiera (~> 1.0.0)
     puppet-lint (0.3.2)
     rake (10.0.2)
 
@@ -8,5 +13,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  puppet (~> 3.0.1)
   puppet-lint (~> 0.3.2)
   rake (~> 10.0.2)
