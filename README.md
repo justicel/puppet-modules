@@ -1,8 +1,8 @@
-# Bug Spoon Labs Puppet Modules
+# Puppet Modules
 
 ## Contact
 
-Brendan O'Donnell <brendan.odonnell@bigspoonlabs.com>
+Brendan O'Donnell <brendan.james.odonnell@gmail.com>
 
 ## Support
 
