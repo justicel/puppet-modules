@@ -10,6 +10,28 @@ To install build-essential
 
     class { 'build-essential': }
 
+## Resources
+
+To install a source package
+
+    build_essential::resource::build_package { 'nginx':
+      link          => 'http://nginx.org/download/nginx-1.2.5.tar.gz',
+      name          => 'nginx',
+      version       => '1.2.5',
+      binary        => '/usr/local/nginx/sbin/nginx',
+      deps          => ['libpcre3-dev'],
+      packed_dir    => 'nginx-1.2.5',
+    }
+
+    build_essential::resource::build_package { 'mysql dev release':
+      link          => 'http://dev.mysql.com/get/Downloads/MySQL-5.6/mysql-5.6.8-rc-linux2.6-x86_64.tar.gz/from/http://cdn.mysql.com/',
+      name          => 'mysql',
+      version       => '5.6.8',
+      binary        => '/usr/local/mysql/bin/mysql',
+      packed_dir    => 'mysql-5.6.8-rc-linux2.6-x86_64',
+      build_command => 'useradd -r mysql && cp -r . /usr/local/mysql'
+    }
+
 ## License
 
 Copyright (C) 2012 Brendan O'Donnell
