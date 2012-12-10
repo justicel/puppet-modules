@@ -29,15 +29,18 @@
 #
 define ruby_build::resource::gem(
   $ruby_name,
-  $gem_name = $title,
-  $gem_version = ''
+  $gem_name     = $title,
+  $gem_version  = ''
 ) {
+
+  require ruby_build
 
   $gem_exe = "${rbenv::params::install_dir}/versions/${ruby_name}/bin/gem"
 
   if $gem_version == '' {
     exec { "rbenv install ${ruby_name} ${gem_name}":
-      command     => "${gem_exe} install ${gem_name}",
+      command     => "${gem_exe} install ${gem_name} \
+                      --no-ri --no-rdoc",
       unless      => "${gem_exe} list | grep ${gem_name}",
       environment => "RBENV_VERSION=${ruby_name}"
     }
@@ -45,7 +48,9 @@ define ruby_build::resource::gem(
   else
   {
     exec { "rbenv install ${ruby_name} ${gem_name}":
-      command     => "${gem_exe} install ${gem_name} --version ${gem_version}",
+      command     => "${gem_exe} install ${gem_name} \
+                      --version ${gem_version} \
+                      --no-ri --no-rdoc",
       unless      => "${gem_exe} list | grep '${gem_name} (${gem_version})'",
       environment => "RBENV_VERSION=${ruby_name}"
     }
