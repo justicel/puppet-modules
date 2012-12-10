@@ -27,8 +27,10 @@ define ruby_build::resource::ruby(
 ) {
 
   require build_essential
+  require ruby_build
 
   $build_exe    = "${ruby_build::params::install_dir}/bin/ruby-build"
+  $rbenv_exe    = "${rbenv::params::install_dir}/bin/rbenv"
   $ruby_prefix  = "${rbenv::params::install_dir}/versions/${ruby_name}"
 
   exec { "rbenv install ${ruby_name}":
@@ -37,7 +39,7 @@ define ruby_build::resource::ruby(
   }
 
   exec { "rbenv rehash ${ruby_name}":
-    command     => 'rbenv rehash',
+    command     => "${rbenv_exe} rehash",
     environment => "RBENV_VERSION=${ruby_name}",
     refreshonly => true
   }
