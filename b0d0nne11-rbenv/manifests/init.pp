@@ -43,6 +43,7 @@ class rbenv {
                   ${rbenv::params::repo_path} \
                   ${rbenv::params::repo_name}",
     creates   => $rbenv::params::install_dir
+    path      => ['/usr/bin', '/usr/sbin', '/sbin', '/bin'],
   }
 
   file { [
